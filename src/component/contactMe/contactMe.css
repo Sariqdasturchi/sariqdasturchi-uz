@@ -1,0 +1,175 @@
+.contcat-me-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid red; */
+}
+
+.contact-me-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 750px;
+    /* border: 1px solid red; */
+}
+
+.contact-title {
+    width: 100%;
+    height: 55px;
+}
+
+.contact-title h1 {
+    font-size: 26px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: white;
+}
+
+.contact-block {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    /* border: 1px solid blue; */
+}
+
+.user-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 620px;
+    /* border: 1px solid silver; */
+    border-radius: 10px;
+}
+
+.user-image {
+    width: 410px;
+    height: 420px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    background-image: url('./sariqdasturchi-user.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.user-desc {
+    text-align: center;
+    width: 100%;
+    height: 75px;
+    margin-bottom: 5px;
+    /* border: 1px solid red; */
+}
+
+.user-desc h1 {
+    font-size: 26px;
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;color: white;
+}
+
+.user-desc p {
+    font-size: 17px;
+    font-weight: 300;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.user-message {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.user-message a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.user-message a span img {
+    width: 25px;
+}
+
+.user-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 590px;
+    height: 570px;
+    border: 1px solid #101929;
+    border-radius: 15px;
+}
+
+.user-about-form {
+    width: 90%;
+    height: 450px;
+    /* border: 1px solid red; */
+}
+
+.user-about-form form div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    /* border: 1px solid green; */
+}
+
+.user-about-form form div:nth-child(3) {
+    justify-content: center;
+    align-items: center;
+}
+
+.user-about-form div input {
+    width: 250px;
+    padding: 15px;    
+    background-color: transparent;
+    border: 1px solid #101929;
+    outline: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.user-about-form form div textarea {
+    width: 100%;
+    height: 270px;
+    padding: 10px;
+    margin-top: 35px;
+    background-color: transparent;
+    border: 1px solid #101929;
+    border-radius: 7px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+}
+
+.user-about-form div button {
+    width: 150px;
+    height: 45px;
+    margin-top: 25px;
+    background-color: #3B82F6;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "Montserrat", sans-serif;
+    color: #101929;
+    cursor: pointer;
+}

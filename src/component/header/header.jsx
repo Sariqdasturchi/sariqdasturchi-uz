@@ -1,5 +1,6 @@
 import logo from './sariqdasturchi.png';
 import './header.css'
+import { Link } from 'react-router-dom';
 
 function HeaderComponent() {
     return(
@@ -14,10 +15,10 @@ function HeaderComponent() {
                 </div>
                 <div className="menu-list">
                     <ul>
-                        <li><a href="#">Bosh sahifa</a></li>
-                        <li><a href="#">Barcha kurslar</a></li>
-                        <li><a href="#">Loyihalar</a></li>
-                        <li><a href="#">Bog'lanish</a></li>
+                        <li><Link to={'/'}>Bosh sahifa</Link></li>
+                        <li><Link to={'/'}>Barcha kurslar</Link></li>
+                        <li><Link to={'/'}>Loyihalar</Link></li>
+                        <li><Link to={'/contact-me'}>Bog'lanish</Link></li>
                     </ul>
                 </div>
                 <div className="login-page">
