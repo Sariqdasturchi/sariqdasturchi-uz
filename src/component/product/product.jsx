@@ -10,14 +10,9 @@ class Product extends Component {
             data: [
                 {title: "Frontend", price:"100 000", image:`<img src='./psychology.png' />`},
                 {title: "Backend", price:"100 000", image:`<img src={image} />`},
-                {title: "React js", price:"100 000", image:`<img src={image} />`},
-                {title: "JavaScript", price:"100 000", image:`<img src={image} />`},
-                {title: "Foundion", price:"100 000", image:`<img src={} />`},
-                {title: "Html, Css", price:"100 000", image:`<img src={} />`},
-                {title: "Html, Css", price:"100 000", image:`<img src={} />`},
-                {title: "Html, Css", price:"100 000", image:`<img src={} />`},
-                {title: "Html, Css", price:"100 000", image:`<img src={} />`},
-                {title: "Html, Css", price:"100 000", image:`<img src={} />`},
+                {title: "Kompyuter-Savodxonligi", price:"100 000", image:`<img src={image} />`},
+                {title: "3D-Max, Autocad", price:"100 000", image:`<img src={image} />`},
+                {title: "Grafig dizayn", price:"100 000", image:`<img src={image} />`},
             ]
         }
     }

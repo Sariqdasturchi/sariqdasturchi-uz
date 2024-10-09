@@ -1,0 +1,47 @@
+.course-about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    /* border: 1px solid red; */
+}
+
+.course-about-block {
+    width: 80%;
+    height: 750px;
+    /* border: 1px solid blue; */
+}
+
+.img-cont {
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid red; */
+}
+
+.img-cont img {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.course-about-title {
+    padding-top: 15px;
+    width: 100%;
+    height: 300px;
+    /* border: 1px solid red; */
+}
+
+.course-about-title h1 {
+    font-size: 26px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+.course-about-title p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}

@@ -16,13 +16,13 @@ function HeaderComponent() {
                 <div className="menu-list">
                     <ul>
                         <li><Link to={'/'}>Bosh sahifa</Link></li>
-                        <li><Link to={'/'}>Barcha kurslar</Link></li>
+                        <li><Link to={'/course'}>Barcha kurslar</Link></li>
                         <li><Link to={'/'}>Loyihalar</Link></li>
                         <li><Link to={'/contact-me'}>Bog'lanish</Link></li>
                     </ul>
                 </div>
                 <div className="login-page">
-                    <button>Kirish</button>
+                    <Link to={'/login'}>Kirish</Link>
                 </div>
                 <div className="user-page"></div>
             </nav>

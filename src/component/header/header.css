@@ -21,7 +21,7 @@ header {
     position: absolute;
     bottom: 0;
     width: 100%;
-    height: 120px;
+    height: 80px;
     position: fixed;
     /* border: 1px solid red; */
 }
@@ -73,16 +73,37 @@ nav .logo a {
     color: white;
 }
 
-.login-page button {
-    width: 150px;
-    height: 45px;
+.login-page a {
+    padding: 15px;
     background-color: transparent;
     background-color: #3B82F6;
     border: none;
     border-radius: 5px;
+    text-decoration: none;
     font-size: 18px;
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
     color: #020817;
     cursor: pointer;
+    
+}
+
+
+/* Mobile Sytle */
+@media screen and (width < 420px) {
+    nav .logo a {
+        display: none;
+    }
+
+    .menu-list ul li {
+        margin: 5px;
+    }
+
+    .menu-list ul li a {
+        font-size: 14px;
+    }
+
+    .login-page a {
+        display: none;
+    }
 }
