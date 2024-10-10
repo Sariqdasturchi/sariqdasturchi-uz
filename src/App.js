@@ -4,6 +4,7 @@ import ContactMe from "./component/contactMe/contactMe";
 import Course from "./component/course/course";
 import Login from "./component/login/login";
 import CourseAbout from "./component/course/course-about";
+import CourseVidoe from "./component/course-video/course-vidoe";
 
 const router = createBrowserRouter([
     {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
     {
         path: "/login",
         element: <Login />
+    },
+    {
+        path: '/course-video/:id',
+        element: <CourseVidoe />
     }
 ]);
 

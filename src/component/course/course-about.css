@@ -25,6 +25,27 @@
     border-radius: 15px;
 }
 
+.btn-course {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 75px;
+    /* border: 1px solid red; */
+}
+
+.btn-course button {
+    width: 150px;
+    height: 45px;
+    background-color: #3B82F6;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    color: #020817;
+    cursor: pointer;
+}
+
 .course-about-title {
     padding-top: 15px;
     width: 100%;

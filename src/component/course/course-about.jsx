@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import HeaderComponent from '../header/header';
 import html from './imgs/html.png'
 import css from './imgs/css.png'
@@ -32,6 +32,11 @@ const CourseAbout = () => {
             <div className='course-about-block'>
                 <div className='img-cont'>
                     <img src={course.img} alt={`course-${course.name.toLowerCase()}`} />
+                </div>
+                <div className="btn-course">
+                    <Link to={`/course-video/${course.id}`} key={course.id}>
+                        <button>Kursni boshlash</button>
+                    </Link>
                 </div>
                 <div className='course-about-title'>
                     <h1>{course.name}</h1>
