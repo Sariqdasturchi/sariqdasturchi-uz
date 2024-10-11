@@ -53,3 +53,27 @@
     font-family: "Montserrat", sans-serif;
     color: white;
 }
+
+/* Mobile Style */
+@media screen and (width < 420px) {
+    .product-items {
+        flex-wrap: wrap;
+        grid-template-columns: repeat(1,1fr);
+        /* border: 1px solid red; */
+    }
+
+    .product-item {
+        margin: 0px auto;
+        width: 250px;
+        height: 250px;
+    }
+
+    .product-title h3 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .product-price p {
+        font-size: 16px;
+    }
+}

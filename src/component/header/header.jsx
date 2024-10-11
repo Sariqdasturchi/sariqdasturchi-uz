@@ -22,7 +22,9 @@ function HeaderComponent() {
                     </ul>
                 </div>
                 <div className="login-page">
-                    <Link to={'/login'}>Kirish</Link>
+                    <Link to={'/login'}>
+                        <button>Kirish</button>
+                    </Link>
                 </div>
                 <div className="user-page"></div>
             </nav>

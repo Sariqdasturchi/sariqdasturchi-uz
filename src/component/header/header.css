@@ -14,7 +14,6 @@ body {
 }
 
 header {
-   
     display: flex;
     justify-content: center;
     align-items: center;
@@ -73,7 +72,8 @@ nav .logo a {
     color: white;
 }
 
-.login-page a {
+.login-page a button {
+    width: 150px;
     padding: 15px;
     background-color: transparent;
     background-color: #3B82F6;
@@ -91,19 +91,28 @@ nav .logo a {
 
 /* Mobile Sytle */
 @media screen and (width < 420px) {
-    nav .logo a {
+    header  {
+        height: 65px;
+    }
+
+    nav {
+        height: 65px;
+        position: relative;
+    }
+
+    nav .logo a h1 {
         display: none;
     }
 
-    .menu-list ul li {
-        margin: 5px;
-    }
-
-    .menu-list ul li a {
-        font-size: 14px;
-    }
-
-    .login-page a {
+    .menu-list ul {
         display: none;
+    }
+
+    .login-page a button {
+        position: absolute;
+        right: 30px;
+        bottom: 10px;
+        width: 100px;
+        padding: 8px;
     }
 }
