@@ -92,16 +92,16 @@ nav .logo a {
 /* Mobile Sytle */
 @media screen and (width < 420px) {
     header  {
-        height: 65px;
+        height: 95px;
     }
 
     nav {
-        height: 65px;
+        height: 95px;
         position: relative;
     }
 
     nav .logo a h1 {
-        display: none;
+        font-size: 16px;
     }
 
     .menu-list ul {
@@ -109,10 +109,16 @@ nav .logo a {
     }
 
     .login-page a button {
-        position: absolute;
-        right: 30px;
-        bottom: 10px;
-        width: 100px;
-        padding: 8px;
+       display: none;
+    }
+
+    .menu button {
+        border: none;
+        background-color: transparent;
+    }
+
+    .menu button svg {
+        font-size: 24px;
+        color: white;
     }
 }
