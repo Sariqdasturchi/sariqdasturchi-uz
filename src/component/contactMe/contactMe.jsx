@@ -1,5 +1,4 @@
 import React from 'react';
-import { Button, message, Space } from 'antd';
 import './contactMe.css';
 import HeaderComponent from '../header/header';
 import telegram from './telegram.png';
@@ -8,43 +7,6 @@ import github from './github.png';
 import linkedin from './linkedin.png';
 
 const ContactMe = () => {
-    const [result, setResult] = React.useState("");
-    const [messageApi, contextHolder] = message.useMessage();
-
-
-
-    const onSubmit = async (event) => {
-        event.preventDefault();
-        setResult("Sending....");
-        const formData = new FormData(event.target);
-
-        formData.append("access_key", "c7f7a481-eb4a-4864-b29d-46b82742e95f");
-
-        const response = await fetch("https://api.web3forms.com/submit", {
-            method: "POST",
-            body: formData
-        });
-
-        const data = await response.json();
-
-        if (data.success) {
-            setResult("Form Submitted Successfully");
-            event.target.reset();
-
-            messageApi.open({
-                type: 'success',
-                content: 'Xabaringiz yuborild',
-            });
-
-        } else {
-            setResult(data.message);
-
-        }
-    };
-
-
-
-
     return (
         <div className='contcat-me-section'>
 
@@ -80,7 +42,7 @@ const ContactMe = () => {
                     </div>
                     <div className="user-about">
                         <div className="user-about-form">
-                            <form onSubmit={onSubmit}>
+                            <form>
                                 <div>
                                     <input type="text" name='name' placeholder='Ism' required />
                                     <input type="email" name='email' placeholder='Email' required />
@@ -89,7 +51,6 @@ const ContactMe = () => {
                                     <textarea name="message" id="message" placeholder='Xabar...' required></textarea>
                                 </div>
                                 <div>
-                                    {contextHolder}
                                     <button type='submit'>Yuborish</button>
                                 </div>
                             </form>
