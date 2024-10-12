@@ -66,3 +66,39 @@
     font-family: 'Montserrat', sans-serif;
     color: white;
 }
+
+/* Mobile Style */
+@media screen and (width < 420px) {
+    .course-about-block {
+        margin-top: -30px;
+        width: 100%;
+        height: 83.8vh;
+        padding: 15px;
+        /* border: 1px solid red; */
+    }
+
+    .img-cont {
+        height: 200px;
+    }
+
+    .img-cont img {
+        height: 200px;
+    }
+
+    .btn-course {
+        height: 65px;
+    }
+
+    .btn-course button {
+        width: 140px;
+        font-size: 15px;
+    }
+
+    .course-about-title h1 {
+        font-size: 20px;
+    }
+
+    .course-about-title p {
+        font-size: 14px;
+    }
+}

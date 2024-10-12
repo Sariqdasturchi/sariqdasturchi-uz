@@ -39,3 +39,32 @@
     color: white;
     cursor: pointer;
 }
+
+
+/* Mobile Style */
+@media screen and (width < 420px) {
+    .video-block {
+        flex-direction: column;
+        justify-content: center ;
+        width: 100%;
+        height: 100vh;
+        /* border: 1px solid red; */
+    }
+
+    .video-block iframe {
+        margin: 0px auto;
+        width: 90%;
+        height: 300px;
+    }
+
+    .video-cont-list {
+        margin: 25px auto;
+        width: 90%;
+        height: 370px;
+        /* border: 1px solid blue; */
+    }
+
+    .video-cont-list button {
+        font-size: 16px;
+    }
+}

@@ -88,6 +88,10 @@ nav .logo a {
 
 }
 
+.mobile-menu-list, .dark-mode, .menu {
+    display: none;
+}
+
 
 /* Mobile Sytle */
 @media screen and (width < 420px) {
@@ -110,6 +114,10 @@ nav .logo a {
 
     .login-page a button {
         display: none;
+    }
+
+    .mobile-menu-list, .dark-mode, .menu {
+        display: block;
     }
 
     .menu button {
