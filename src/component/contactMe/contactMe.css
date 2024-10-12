@@ -173,3 +173,81 @@
     color: #101929;
     cursor: pointer;
 }
+
+/* Mobile Style */
+@media screen and (width < 420px) {
+    .contcat-me-section {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+    }
+
+    .contact-me-container {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        /* border: 1px solid red; */
+    }
+
+    .contact-title h1 {
+        padding: 25px;
+        position: fixed;
+        font-size: 20px;
+        z-index: 9;
+    }
+
+    .contact-block {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 50px auto;
+        overflow-y: scroll;
+        /* border: 1px solid blue; */
+    }
+
+    .user-contact {
+        width: 350px;
+        height: 552px;
+        margin-bottom: 25px;
+        /* border: 1px solid red; */
+    }
+
+    .user-image {
+        width: 350px;
+        height: 352px;
+    }
+
+    .user-desc h1 {
+        font-size: 24px;
+    }
+
+    .user-desc p {
+        font-size: 15px;
+    }
+
+    .user-message a {
+        font-size: 14px;
+    }
+
+    .user-message a span img {
+        width: 20px;
+    }
+
+    .user-about {
+        width: 350px;
+        height: 540px;
+        /* border: 1px solid white; */
+    }
+
+    .user-about-form {
+        padding: 15px;
+        width: 100%;
+        height: 520px;
+        /* border: 1px solid red; */
+    }
+
+    .user-about-form form div input {
+        width: 100%;
+        margin: 5px;
+    }
+}
