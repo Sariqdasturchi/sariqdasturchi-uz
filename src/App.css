@@ -1,0 +1,8 @@
+body.light-mode {
+    background-color: white;
+    color: #000;
+}
+
+body.dark-mode {
+    color: #000;
+}

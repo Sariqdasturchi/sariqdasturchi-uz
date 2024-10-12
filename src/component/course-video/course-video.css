@@ -53,14 +53,14 @@
 
     .video-block iframe {
         margin: 0px auto;
-        width: 90%;
-        height: 300px;
+        width: 85%;
+        height: 250px;
     }
 
     .video-cont-list {
         margin: 25px auto;
-        width: 90%;
-        height: 370px;
+        width: 80%;
+        height: 320px;
         /* border: 1px solid blue; */
     }
 

@@ -6,6 +6,8 @@ import Login from "./component/login/login";
 import CourseAbout from "./component/course/course-about";
 import CourseVidoe from "./component/course-video/course-vidoe";
 
+import './App.css'
+
 const router = createBrowserRouter([
     {
         path: "/",

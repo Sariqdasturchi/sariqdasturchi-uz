@@ -3,18 +3,28 @@ import './header.css'
 import { Link } from 'react-router-dom';
 import { CiMenuFries } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
+import { IoMdSunny } from "react-icons/io";
 import { CiDark } from "react-icons/ci";
-import { MdDarkMode } from "react-icons/md";
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 function HeaderComponent() {
 
-    const [darkMode, setDarkMode] = useState(false)
+    const [darkMode, setDarkMode] = useState(() => {
+        const savedMode = localStorage.getItem('dark-mode');
+        return savedMode === 'true';
+    })
     const [menuBtn, setMenuBtn] = useState(false)
 
     const darkModeOnchange = () => {
-        setDarkMode(prevdarkMode => !prevdarkMode)
+        setDarkMode((prevdarkMode) => {
+            const newMode = !prevdarkMode;
+            localStorage.setItem('dark-mode', newMode);
+            return newMode;
+        })
     }
+    useEffect(() => {
+        document.body.className = darkMode ? 'dark-mode' : 'light-mode';
+      }, [darkMode]);
 
     const menuBtnOnchange = () => {
         setMenuBtn(prevMenu => !prevMenu)
@@ -43,15 +53,15 @@ function HeaderComponent() {
                         </Link>
                     </div>
                     <div className="dark-mode">
-                        {darkMode ? <button onClick={darkModeOnchange}><MdDarkMode /></button>
-                            : <button onClick={darkModeOnchange}><CiDark /></button>
+                        {darkMode ? <button onClick={darkModeOnchange}><CiDark /></button>
+                            : <button onClick={darkModeOnchange}><IoMdSunny /></button>
                         }
                     </div>
                     <div className="menu">
                         {
                             menuBtn ? <button onClick={menuBtnOnchange}><IoMdClose /></button>
-                            :
-                            <button onClick={menuBtnOnchange}><CiMenuFries /></button>
+                                :
+                                <button onClick={menuBtnOnchange}><CiMenuFries /></button>
                         }
                     </div>
                     <div className="user-page"></div>
