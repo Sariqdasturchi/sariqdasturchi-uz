@@ -6,6 +6,7 @@ import { IoMdClose } from "react-icons/io";
 import { IoMdSunny } from "react-icons/io";
 import { CiDark } from "react-icons/ci";
 import { useEffect, useState } from 'react';
+import { MdEmail } from "react-icons/md";
 
 function HeaderComponent() {
 
@@ -24,7 +25,7 @@ function HeaderComponent() {
     }
     useEffect(() => {
         document.body.className = darkMode ? 'dark-mode' : 'light-mode';
-      }, [darkMode]);
+    }, [darkMode]);
 
     const menuBtnOnchange = () => {
         setMenuBtn(prevMenu => !prevMenu)
@@ -47,15 +48,21 @@ function HeaderComponent() {
                             <li><Link to={'/contact-me'}>Bog'lanish</Link></li>
                         </ul>
                     </div>
-                    <div className="login-page">
-                        <Link to={'/login'}>
-                            <button>Kirish</button>
-                        </Link>
-                    </div>
-                    <div className="dark-mode">
-                        {darkMode ? <button onClick={darkModeOnchange}><CiDark /></button>
-                            : <button onClick={darkModeOnchange}><IoMdSunny /></button>
-                        }
+
+                    <div className='header-right'>
+                        <div className="dark-mode">
+                            {darkMode ? <button onClick={darkModeOnchange}><CiDark /></button>
+                                : <button onClick={darkModeOnchange}><IoMdSunny /></button>
+                            }
+                        </div>
+                        <div className='message-link'>
+                            <Link to={'/contact-me'}><MdEmail /></Link>
+                        </div>
+                        <div className="login-page">
+                            <Link to={'/login'}>
+                                <button>Kirish</button>
+                            </Link>
+                        </div>
                     </div>
                     <div className="menu">
                         {
@@ -64,6 +71,7 @@ function HeaderComponent() {
                                 <button onClick={menuBtnOnchange}><CiMenuFries /></button>
                         }
                     </div>
+
                     <div className="user-page"></div>
                     {
                         menuBtn ?
