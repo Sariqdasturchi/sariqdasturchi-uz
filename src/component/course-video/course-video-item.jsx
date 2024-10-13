@@ -23,11 +23,22 @@ const CourseVideoItem = () => {
     const handleVideoChange = (url) => {
         setCurrentVideo(url);
     };
+    
 
     return (
         <div className='course-vidoe-container'>
             <div className="video-block">
-                <iframe width="960" height="575" src={currentVideo} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe
+                    width="960"
+                    height="575"
+                    src={currentVideo}
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                >
+                </iframe>
                 <div className="video-cont-list">
                     <ul>
                         {videos.map((video, index) => (

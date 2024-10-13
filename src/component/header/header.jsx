@@ -31,7 +31,7 @@ function HeaderComponent() {
     }
     return (
         <>
-            <header>
+            <header data-theme={darkMode ? 'dark' : 'light'}>
                 <nav>
                     <div className="logo">
                         <a href="/">

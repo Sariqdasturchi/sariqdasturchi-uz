@@ -1,8 +1,69 @@
-body.light-mode {
-    background-color: white;
-    color: #000;
+/* Global o'zgaruvchilar */
+:root {
+    --background-color: #fff;
+    --text-color: #000;
+    --card-background: #f9f9f9;
 }
 
 body.dark-mode {
-    color: #000;
+    --background-color: #121212;
+    --text-color: #fff;
+    --card-background: #333;
 }
+
+body.light-mode {
+    --background-color: #fff;
+    --text-color: #121212;
+    --card-background: #4B525E;
+    --price-color: rgb(248, 214, 181);
+    --form-background: #4B525E;
+    --border-color: #fff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.course-cards {
+    background-color: var(--card-background);
+    color: var(--text-color);
+}
+
+.course-cards-title {
+    background-color: var(--background-color);
+}
+
+.course-cards-title h1, .home-title h1, .contact-title h1{
+    color: var(--text-color);
+}
+
+.card-price p {
+    color: var(--price-color);
+}
+
+.user-desc h1, .user-desc p {
+    color: var(--text-color);
+}
+
+.user-message a  {
+    color: var(--text-color);
+}
+
+.user-about {
+    background-color: var(--form-background);
+    border: none;
+}
+
+.user-about-form div input {
+    border: 1px solid var(--border-color);
+}
+
+.user-about-form form div textarea {
+    border: 1px solid var(--border-color);
+}
+
+.course-about-title h1, .course-about-title p, .video-cont-list ul li button {
+    color: var(--text-color);
+}
+
