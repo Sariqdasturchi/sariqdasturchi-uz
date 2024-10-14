@@ -8,6 +8,9 @@ import { CiDark } from "react-icons/ci";
 import { useEffect, useState } from 'react';
 import { MdEmail } from "react-icons/md";
 
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+
 function HeaderComponent() {
 
     const [darkMode, setDarkMode] = useState(() => {
@@ -15,6 +18,11 @@ function HeaderComponent() {
         return savedMode === 'true';
     })
     const [menuBtn, setMenuBtn] = useState(false)
+    const [show, setShow] = useState(false);
+
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+
 
     const darkModeOnchange = () => {
         setDarkMode((prevdarkMode) => {
@@ -66,30 +74,29 @@ function HeaderComponent() {
                     </div>
                     <div className="menu">
                         {
-                            menuBtn ? <button onClick={menuBtnOnchange}><IoMdClose /></button>
+                            menuBtn ? <button onClick={handleShow}><IoMdClose /></button>
                                 :
-                                <button onClick={menuBtnOnchange}><CiMenuFries /></button>
+                                <button onClick={handleShow}><CiMenuFries /></button>
                         }
                     </div>
 
                     <div className="user-page"></div>
-                    {
-                        menuBtn ?
-                            <div className="mobile-menu-list">
-                                <ul>
-                                    <li><Link to={'/'}>Bosh sahifa</Link></li>
-                                    <li><Link to={'/course'}>Barcha kurslar</Link></li>
-                                    <li><Link to={'/'}>Loyihalar</Link></li>
-                                    <li><Link to={'/contact-me'}>Bog'lanish</Link></li>
-                                    <div className="mobile-login-page">
-                                        <Link to={'/login'}>
-                                            <button>Kirish</button>
-                                        </Link>
-                                    </div>
-                                </ul>
-                            </div>
-                            : null
-                    }
+
+                    <Modal show={show} onHide={handleClose}>
+                        <Modal.Header closeButton>
+                            <Modal.Title>Modal heading</Modal.Title>
+                        </Modal.Header>
+                        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
+                        <Modal.Footer>
+                            <Button variant="secondary" onClick={handleClose}>
+                                Close
+                            </Button>
+                            <Button variant="primary" onClick={handleClose}>
+                                Save Changes
+                            </Button>
+                        </Modal.Footer>
+                    </Modal>
+
                 </nav>
             </header>
         </>

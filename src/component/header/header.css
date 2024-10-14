@@ -192,7 +192,7 @@ nav .logo a {
 
     .mobile-menu-list {
         position: absolute;
-        bottom: 0;
+        top: 0;
         width: 100%;
         height: 400px;
         background-color: #020817;
@@ -226,11 +226,11 @@ nav .logo a {
 
     @keyframes menuBottom {
         from {
-            margin-bottom: -300px;
+            margin-top: -400px;
         }
 
         to {
-            margin-bottom: 0px;
+            margin-top: 700px;
         }
     }
 
