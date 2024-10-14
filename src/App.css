@@ -10,15 +10,19 @@ body.dark-mode {
     --text-color: #fff;
     --card-background: #101929c0;
     --border-color: rgba(192, 192, 192, 0.37);
+    --header-background-color: #020817;
+    --price-color: rgb(248, 214, 181);
 }
 
 body.light-mode {
-    --background-color: #f0f8ff;
+    --background-color: #fff;
     --text-color: #121212;
-    --card-background: #4B525E;
-    --price-color: rgb(248, 214, 181);
+    --card-background: #f0f8ff;
+    --header-background-color: #fff;
+    --price-color: rgb(241, 105, 70);
     --form-background: #4B525E;
     --border-color: #4B525E;
+    --btn-text-color: #fff;
 }
 
 body {
@@ -26,8 +30,38 @@ body {
     color: var(--text-color);
 }
 
+header nav {
+    background-color: var(--header-background-color);
+    /* border: 1px solid var(--border-color); */
+    box-shadow: 1px 2px 5px var(--border-color);
+}
+
+nav .logo h1 {
+    color: var(--text-color);
+}
+
+.menu-list ul li a {
+    color: var(--text-color);
+}
+
+.login-page a button {
+    color: var(--btn-text-color);
+}
+
+.dark-mode button svg, .menu button svg {
+    color: var(--text-color);
+}
+
+.message-link a svg {
+    color: var(--text-color);
+}
+
 .course-cards {
-    background-color: var(--card-background);
+    background-color: transparent;
+    box-shadow: 1px 2px 5px var(--border-color);
+}
+
+.card-title h3 {
     color: var(--text-color);
 }
 
