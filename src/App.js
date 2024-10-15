@@ -40,6 +40,7 @@ function App() {
     return (
         <>
             <h1>Saytda texnik ishlar olib borilmoqda...</h1>
+            <p>Biz tez orada ishga tushamiz</p>
         </>
     )
 }
